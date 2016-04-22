@@ -20,7 +20,7 @@ h1,h2, h3, {
 .background1{
    background: url(SWImages/childBubble.jpg) no-repeat top center ;
    background-size: cover;
-   height: 100px;
+   height: 150px;
    width: 100%;
    margin: 0;
    padding: 0;
@@ -75,13 +75,14 @@ input[type=text]:focus {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+    
 	/*overflow: hidden;*/
 	background:#0a97b7;
 	font-family: Antonio-Light;
 	
 }
 li{
-	float: left;
+	float: right;
 	
 }
 li a{
@@ -120,7 +121,6 @@ w3-red {
 /*dropdown menu*/
 .dropdown {
     position: relative;
-    
     display: inline-block;
 }
 
@@ -149,3 +149,9 @@ w3-red {
     text-decoration: none;
     display: block;
     
+    
+ /*buttons stuff*/
+    
+  .nav .common-element common-nav{
+        float: left;
+    }
