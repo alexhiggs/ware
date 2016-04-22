@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<title>product info</title>
+		
+		<meta name="viewport" content="width=device-width" />
+		<link media = "(max-device-width: 300px)" rel = 'stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<link rel="stylesheet" href="sw.css">
+	</head>
+<body>
+	
+	<div class=background1>SproutWare</div>
+	<div class = navi>
+		
+	<ul>
+		<li><a href ="index.html">Home</a></li>
+		
+		
+		
+		<li><a href ="news.html">Search  <input type="search" id="search" placeholder="Search"/></a></li>
+		<li><a href ="#Blog">Log In</a></li>
+		<li><a href ="news.html">Cart</a></li>
+		<div class="dropdown">
+		<li><a href ="#Blog">Browse</a></li>
+		<div class="dropdown-content">
+    <li><a href="#">Browse by Grade</a></li>
+    <li><a href="#">Best Sellers</a></li>
+    <li><a href="#">Expert Recommendation</a></li>
+		</div>
+		</div>
+	
+	</ul>
+		</div>
+	
+	
+
+<nav class="w3-sidenav w3-light-grey w3-card-2" style="width:130px">
+  <div class="w3-container" >
+    <h5>Menu</h5>
+  </div>
+  <a href="#" class="tablink" onclick="openCity(event, 'Details')">Details</a>		
+  <a href="#" class="tablink" onclick="openCity(event, 'Video Demo')">Video Demo</a>		
+  <a href="#" class="tablink" onclick="openCity(event, 'Reviews')">Reviews</a>
+</nav>
+	
+
+<div style="margin-left:130px; position:fixed;">
+
+  <div id="Details" class="w3-container city">
+    <h2>Details</h2>
+    <h3>One of our most loved products!</h3>
+    <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <div class="w3-content" style="max-width:800px;">
+	    <img class="mySlides" src="SWImages/puzzle.jpg" style="width:100%">
+		<img class="mySlides" src="SWImages/countingtoy.jpg" style="width:100%">
+		<img class="mySlides" src="SWImages/alphabet.jpg" style="width:100%">
+		<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">&#60</a>
+		<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">&#62</a>
+  </div>
+  </div>
+  <div id="Video Demo" class="w3-container city">
+    <h2>Video Demo</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+   <p> <iframe width="560" height="315" src="https://www.youtube.com/embed/qEWXDd4kVNk" frameborder="0" allowfullscreen></iframe></p>
+  </div>
+
+  <div id="Reviews" class="w3-container city">
+    <h2>Reviews</h2>
+    <button class="w3-btn w3-white w3-border w3-round-large" style="overflow:scroll;"><a href ="review.html">Add Your Review</a></button>
+    <h3>Review 1</h3>
+    <h4>Best toy ever!</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut erat convallis, volutpat neque ullamcorper, imperdiet urna. Cras mollis, diam volutpat volutpat luctus, sapien magna hendrerit est, nec rhoncus ligula tellus vitae magna. In pretium finibus augue. Etiam sed semper magna. Cras tempor, lectus a blandit dignissim, ipsum turpis suscipit est, vel rutrum ante arcu id massa.</p>
+    <h3>Review 2</h3>
+    <h4>Loved it!</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut erat convallis, volutpat neque ullamcorper, imperdiet urna. Cras mollis, diam volutpat volutpat luctus, sapien magna hendrerit est, nec rhoncus ligula tellus vitae magna. In pretium finibus augue. Etiam sed semper magna. Cras tempor, lectus a blandit dignissim, ipsum turpis suscipit est, vel rutrum ante arcu id massa.</p>
+    
+    
+  </div>
+
+</div>
+	</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html> 
