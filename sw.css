@@ -1,3 +1,4 @@
+
 .box {
 
 margin: 1em;
@@ -31,6 +32,14 @@ h1,h2, h3, {
    font-weight: bolder;
    font-size: 6em;
    
+}
+
+#small{
+	height: 200px;
+	width:200px;
+	border:2px dotted gray;
+	border-radius: 10%;
+	margin: 1em;
 }
 
 
@@ -96,6 +105,7 @@ li a{
 
 li a:hover{
 	background-color: #fea360;
+	border-radius: 10%;
 	
 }
 .active{
